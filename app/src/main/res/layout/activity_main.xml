@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/circle_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed by"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#FF03DAC5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mansi Nerkar"
+                android:textAlignment="center"
+                android:textColor="#FF03DAC5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/Github"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_border"
+            android:clickable="true"
+            android:src="@drawable/github"
+            android:layout_marginLeft="20dp"
+            android:onClick="openGitHub"
+
+            />
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="openLinkedInPage"
+            android:src="@drawable/linkedin"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="53dp"
+        android:contentDescription="TODO"
+        android:padding="10dp"
+        android:src="@drawable/lock"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lock"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="163dp"
+        android:background="@drawable/background"
+        android:padding="30dp"
+        android:text="@string/unlock"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="authenticateWithBiometrics"
+        />
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/footerTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:drawableLeft="@drawable/hello"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/background"-->
+<!--        android:text="Developed by Utkarsh Mishra"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="bold" />-->
+</RelativeLayout>
